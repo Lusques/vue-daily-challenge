@@ -4,13 +4,12 @@ import vue from "@vitejs/plugin-vue";
 
 const config: StorybookConfig = {
   stories: [
-    "../src/components/challenges/**/*.stories.@(js|ts|mdx)", // Caminho para seus componentes
-    "../stories/**/*.mdx", // Docs adicionais (opcional)
+    "../src/components/challenges/**/*.stories.@(js|ts|mdx)", 
+    "../stories/**/*.mdx",
   ],
   addons: [
-    "@storybook/addon-essentials", // Addons básicos
-    // '@storybook/addon-onboarding',          // Remova se não precisar
-    // '@storybook/addon-interactions'        // Remova se não for usar testes interativos
+    "@storybook/addon-essentials",
+    "@storybook/addon-docs"
   ],
   framework: {
     name: "@storybook/vue3-vite",

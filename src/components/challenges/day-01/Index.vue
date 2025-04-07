@@ -32,9 +32,14 @@
 
 <script lang="ts" setup>
 import { ref } from "vue";
-const count = ref(0);
+interface Props {
+  initialValue?: number;
+}
+const props = defineProps<Props>();
+const count = ref(props.initialValue ? props.initialValue : 0);
 const alertMessage = ref("");
 const alertType = ref("primary");
+
 function increment() {
   count.value++;
   if (count.value === 10) {
@@ -50,7 +55,6 @@ function decrement() {
     count.value--;
   }
 }
-
 function showTemporaryAlert(newMessage: string) {
   if (alertMessage.value === newMessage) {
     return;
