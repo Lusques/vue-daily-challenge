@@ -10,7 +10,8 @@
     "postinstall": "nuxt prepare",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "create-challenge": "node scripts/create-challenge.js"
+    "create-challenge": "node scripts/create-challenge.js",
+    "deploy-storybook": "npm run build-storybook && gh-pages -d storybook-static"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
@@ -31,6 +32,7 @@
     "@types/jest": "^29.5.14",
     "@vitejs/plugin-vue": "^5.2.3",
     "@vue/test-utils": "^2.4.0-alpha.2",
+    "gh-pages": "^6.3.0",
     "storybook": "^8.6.12",
     "vue-jest": "^5.0.0-alpha.10"
   }
