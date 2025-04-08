@@ -1,7 +1,7 @@
 *.vue linguist-detectable=true
 *.ts linguist-detectable=true
 *.vue linguist-language=Vue
-<!-- *.ts linguist-language=Vue -->
+*.js linguist-language=Vue
 *.spec.ts linguist-documentation
 *.stories.ts linguist-documentation
 *.stories.js linguist-documentation
