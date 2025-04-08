@@ -65,3 +65,19 @@ const emit = defineEmits<Emits>();
   }
 }
 </style>
+
+<!-- <template>
+  <div>
+    <p>Count: {{ count }}</p>
+    <button @click="$emit('increment')">+</button>
+    <button @click="$emit('decrement')">-</button>
+  </div>
+</template>
+
+<script setup lang="ts">
+defineProps<{ count: number }>();
+defineEmits<{
+  (e: 'increment'): void;
+  (e: 'decrement'): void;
+}>();
+</script> -->
