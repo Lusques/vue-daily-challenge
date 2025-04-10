@@ -1,3 +1,4 @@
+* text=auto eol=lf
 *.vue linguist-detectable=true
 *.ts linguist-detectable=true
 *.vue linguist-language=Vue
